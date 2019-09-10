@@ -1,14 +1,7 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Sep  9 15:05:20 2019
-
-@author: ssjoh
-"""
-
 ###########################################################
 # Dynamic Transmission Model of MRSA in a Meta-population #
-# Leaky-Pod Model										  #
-# Queue-based Steady State Populations             	      #
+# Leaky-Pod Model					  #
+# Queue-based Steady State Populations             	  #
 # Author: Matthew Mietchen (matthew.mietchen@wsu.edu)     #
 ###########################################################
 
