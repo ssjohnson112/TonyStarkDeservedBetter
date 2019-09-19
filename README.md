@@ -12,3 +12,8 @@ Matt's original code.psc- What it sounds like. Matt's orignial .psc file (gamma.
 
 1dr_2.5nurseratio.psc - file with 6 pt cohorts-3x3pts, 3x2pts- and 1 doctor
 
+Modelruns.py - running the three above models with matt's orginial code for 100 runs
+
+1dr3nurseruns.py - running the 1dr_3nurseratio.psc with matt's code to make sure that the program to run things is working correctly. 
+
+outcomes.py - Finding where the variable 'acquisitions' is so that each model can have it correctly listed in outcomes when models are run.
