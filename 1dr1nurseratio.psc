@@ -7,11 +7,11 @@
 ###########################################################
 
 # Descriptive Information for PML File
-#Modelname: MRSA Meta-population Expanded
-#Description: PML Implementation of MRSA transmission model 
+Modelname: MRSA Meta-population Expanded
+Description: PML Implementation of MRSA transmission model 
 
 ## Most crazy iteration##
-##Doing a 1:1 nurse ratio
+##Doing a 1:1 nurse ratio#
 ##1 doctor, 15 nurses, with 15 cohorts##
 
 # Set model to run with numbers of individuals
@@ -283,23 +283,23 @@ R63:
 
 R64: 
 	N_u3 > N_c3
-	rho_N * sigma * N_u3 * (P_c4 / (P_c4 + P_u4)) * ((1 - gamma) / 14)
+	rho_N * sigma * N_u3 * (P_c1 / (P_c1 + P_u1)) * ((1 - gamma) / 14)
 	
 R65: 
 	N_u3 > N_c3
-	rho_N * sigma * N_u3 * (P_c5 / (P_c5 + P_u5)) * ((1 - gamma) / 14)
+	rho_N * sigma * N_u3 * (P_c2 / (P_c2 + P_u2)) * ((1 - gamma) / 14)
 	
 R66: 
 	N_u3 > N_c3
-	rho_N * sigma * N_u3 * (P_c6 / (P_c6 + P_u6)) * ((1 - gamma) / 14)
+	rho_N * sigma * N_u3 * (P_c4 / (P_c4 + P_u4)) * ((1 - gamma) / 14)
 	
 R67: 
 	N_u3 > N_c3
-	rho_N * sigma * N_u3 * (P_c1 / (P_c1 + P_u1)) * ((1 - gamma) / 14)
+	rho_N * sigma * N_u3 * (P_c5 / (P_c5 + P_u5)) * ((1 - gamma) / 14)
 	
 R68: 
 	N_u3 > N_c3
-	rho_N * sigma * N_u3 * (P_c2 / (P_c2 + P_u2)) * ((1 - gamma) / 14)
+	rho_N * sigma * N_u3 * (P_c6 / (P_c6 + P_u6)) * ((1 - gamma) / 14)
 
 R69: 
 	N_u3 > N_c3
@@ -347,11 +347,11 @@ R79:
 	
 R80:
 	N_c3 > N_u3
-	N_c3 * tau_N * (P_c2 / (P_c2 + P_u2)) * ((1 - gamma) / 14)
+	N_c3 * tau_N * (P_c1 / (P_c1 + P_u1)) * ((1 - gamma) / 14)
 	
 R81:
 	N_c3 > N_u3
-	N_c3 * tau_N * (P_c1 / (P_c1 + P_u1)) * ((1 - gamma) / 14)
+	N_c3 * tau_N * (P_c2 / (P_c2 + P_u2)) * ((1 - gamma) / 14)
 	
 R82:
 	N_c3 > N_u3
@@ -410,23 +410,23 @@ R94:
 
 R95: 
 	N_u4 > N_c4
-	rho_N * sigma * N_u4 * (P_c5 / (P_c5 + P_u5)) * ((1 - gamma) / 14)
+	rho_N * sigma * N_u4 * (P_c1 / (P_c1 + P_u1)) * ((1 - gamma) / 14)
 	
 R96: 
 	N_u4 > N_c4
-	rho_N * sigma * N_u4 * (P_c6 / (P_c6 + P_u6)) * ((1 - gamma) / 14)
+	rho_N * sigma * N_u4 * (P_c2 / (P_c2 + P_u2)) * ((1 - gamma) / 14)
 	
 R97: 
 	N_u4 > N_c4
-	rho_N * sigma * N_u4 * (P_c1 / (P_c1 + P_u1)) * ((1 - gamma) / 14)
+	rho_N * sigma * N_u4 * (P_c3 / (P_c3 + P_u3)) * ((1 - gamma) / 14)
 	
 R98: 
 	N_u4 > N_c4
-	rho_N * sigma * N_u4 * (P_c2 / (P_c2 + P_u2)) * ((1 - gamma) / 14)
+	rho_N * sigma * N_u4 * (P_c5 / (P_c5 + P_u5)) * ((1 - gamma) / 14)
 	
 R99: 
 	N_u4 > N_c4
-	rho_N * sigma * N_u4 * (P_c3 / (P_c3 + P_u3)) * ((1 - gamma) / 14)
+	rho_N * sigma * N_u4 * (P_c6 / (P_c6 + P_u6)) * ((1 - gamma) / 14)
 
 R100: 
 	N_u4 > N_c4
@@ -474,15 +474,15 @@ R110:
 
 R112:
 	N_c4 > N_u4
-	N_c4 * tau_N * (P_c2 / (P_c2 + P_u2)) * ((1 - gamma) / 14)
+	N_c4 * tau_N * (P_c1 / (P_c1 + P_u1)) * ((1 - gamma) / 14)
 	
 R113:
 	N_c4 > N_u4
-	N_c4 * tau_N * (P_c3 / (P_c3 + P_u3)) * ((1 - gamma) / 14)
+	N_c4 * tau_N * (P_c2 / (P_c2 + P_u2)) * ((1 - gamma) / 14)
 	
 R114:
 	N_c4 > N_u4
-	N_c4 * tau_N * (P_c1 / (P_c1 + P_u1)) * ((1 - gamma) / 14)
+	N_c4 * tau_N * (P_c3 / (P_c3 + P_u3)) * ((1 - gamma) / 14)
 	
 R115:
 	N_c4 > N_u4
@@ -538,23 +538,23 @@ R126:
 
 R127: 
 	N_u5 > N_c5
-	rho_N * sigma * N_u5 * (P_c6 / (P_c6 + P_u6)) * ((1 - gamma) / 14)
+	rho_N * sigma * N_u5 * (P_c1 / (P_c1 + P_u1)) * ((1 - gamma) / 14)
 	
 R128: 
 	N_u5 > N_c5
-	rho_N * sigma * N_u5 * (P_c1 / (P_c1 + P_u1)) * ((1 - gamma) / 14)
+	rho_N * sigma * N_u5 * (P_c2 / (P_c2 + P_u2)) * ((1 - gamma) / 14)
 	
 R129: 
 	N_u5 > N_c5
-	rho_N * sigma * N_u5 * (P_c2 / (P_c2 + P_u2)) * ((1 - gamma) / 14)
+	rho_N * sigma * N_u5 * (P_c3 / (P_c3 + P_u3)) * ((1 - gamma) / 14)
 	
 R130: 
 	N_u5 > N_c5
-	rho_N * sigma * N_u5 * (P_c3 / (P_c3 + P_u3)) * ((1 - gamma) / 14)
+	rho_N * sigma * N_u5 * (P_c4 / (P_c4 + P_u4)) * ((1 - gamma) / 14)
 	
 R131: 
 	N_u5 > N_c5
-	rho_N * sigma * N_u5 * (P_c4 / (P_c4 + P_u4)) * ((1 - gamma) / 14)
+	rho_N * sigma * N_u5 * (P_c6 / (P_c6 + P_u6)) * ((1 - gamma) / 14)
 
 R132: 
 	N_u5 > N_c5
@@ -592,7 +592,6 @@ R140:
 	N_u5 > N_c5
 	rho_N * sigma * N_u5 * (P_c15 / (P_c15 + P_u15)) * ((1 - gamma) / 14)
 
-
 R141:
 	N_c5 > N_u5
 	N_c5 * iota_N
@@ -603,19 +602,19 @@ R142:
 
 R143:
 	N_c5 > N_u5
-	N_c5 * tau_N * (P_c2 / (P_c2 + P_u2)) * ((1 - gamma) / 14)
+	N_c5 * tau_N * (P_c1 / (P_c1 + P_u1)) * ((1 - gamma) / 14)
 	
 R144:
 	N_c5 > N_u5
-	N_c5 * tau_N * (P_c3 / (P_c3 + P_u3)) * ((1 - gamma) / 14)
+	N_c5 * tau_N * (P_c2 / (P_c2 + P_u2)) * ((1 - gamma) / 14)
 	
 R145:
 	N_c5 > N_u5
-	N_c5 * tau_N * (P_c4 / (P_c4 + P_u4)) * ((1 - gamma) / 14)
+	N_c5 * tau_N * (P_c3 / (P_c3 + P_u3)) * ((1 - gamma) / 14)
 	
 R146:
 	N_c5 > N_u5
-	N_c5 * tau_N * (P_c1 / (P_c1 + P_u1)) * ((1 - gamma) / 14)
+	N_c5 * tau_N * (P_c4 / (P_c4 + P_u4)) * ((1 - gamma) / 14)
 	
 R147:
 	N_c5 > N_u5
@@ -633,7 +632,7 @@ R150:
 	N_c5 > N_u5
 	N_c5 * tau_N * (P_c9 / (P_c9 + P_u9)) * ((1 - gamma) / 14)
 	
-R151
+R151:
 	N_c5 > N_u5
 	N_c5 * tau_N * (P_c10 / (P_c10 + P_u10)) * ((1 - gamma) / 14)
 	
@@ -730,24 +729,24 @@ R173:
 
 R174:
 	N_c6 > N_u6
-	N_c6 * tau_N * (P_c2 / (P_c2 + P_u2)) * ((1 - gamma) / 14)
-	
+	N_c6 * tau_N * (P_c1 / (P_c1 + P_u1)) * ((1 - gamma) / 14)
+
 R175:
 	N_c6 > N_u6
-	N_c6 * tau_N * (P_c3 / (P_c3 + P_u3)) * ((1 - gamma) / 14)
+	N_c6 * tau_N * (P_c2 / (P_c2 + P_u2)) * ((1 - gamma) / 14)
 	
 R176:
 	N_c6 > N_u6
-	N_c6 * tau_N * (P_c4 / (P_c4 + P_u4)) * ((1 - gamma) / 14)
+	N_c6 * tau_N * (P_c3 / (P_c3 + P_u3)) * ((1 - gamma) / 14)
 	
 R177:
 	N_c6 > N_u6
-	N_c6 * tau_N * (P_c5 / (P_c5 + P_u5)) * ((1 - gamma) / 14)
+	N_c6 * tau_N * (P_c4 / (P_c4 + P_u4)) * ((1 - gamma) / 14)
 	
 R178:
 	N_c6 > N_u6
-	N_c6 * tau_N * (P_c1 / (P_c1 + P_u1)) * ((1 - gamma) / 14)
-
+	N_c6 * tau_N * (P_c5 / (P_c5 + P_u5)) * ((1 - gamma) / 14)
+	
 R179:
 	N_c6 > N_u6
 	N_c6 * tau_N * (P_c7 / (P_c7 + P_u7)) * ((1 - gamma) / 14)
@@ -857,23 +856,23 @@ R204:
 
 R205:
 	N_c7 > N_u7
-	N_c7 * tau_N * (P_c2 / (P_c2 + P_u2)) * ((1 - gamma) / 14)
-	
+	N_c7 * tau_N * (P_c1 / (P_c1 + P_u1)) * ((1 - gamma) / 14)
+
 R206:
 	N_c7 > N_u7
-	N_c7 * tau_N * (P_c3 / (P_c3 + P_u3)) * ((1 - gamma) / 14)
+	N_c7 * tau_N * (P_c2 / (P_c2 + P_u2)) * ((1 - gamma) / 14)
 	
 R207:
 	N_c7 > N_u7
-	N_c7 * tau_N * (P_c4 / (P_c4 + P_u4)) * ((1 - gamma) / 14)
+	N_c7 * tau_N * (P_c3 / (P_c3 + P_u3)) * ((1 - gamma) / 14)
 	
 R208:
 	N_c7 > N_u7
-	N_c7 * tau_N * (P_c5 / (P_c5 + P_u5)) * ((1 - gamma) / 14)
+	N_c7 * tau_N * (P_c4 / (P_c4 + P_u4)) * ((1 - gamma) / 14)
 	
 R209:
 	N_c7 > N_u7
-	N_c7 * tau_N * (P_c1 / (P_c1 + P_u1)) * ((1 - gamma) / 14)
+	N_c7 * tau_N * (P_c5 / (P_c5 + P_u5)) * ((1 - gamma) / 14)
 
 R210:
 	N_c7 > N_u7
@@ -977,7 +976,7 @@ R233:
 
 R234:
 	N_c8 > N_u8
-	N_c7 * iota_N
+	N_c8 * iota_N
 
 R235:
 	N_c8 > N_u8
@@ -985,24 +984,24 @@ R235:
 
 R236:
 	N_c8 > N_u8
-	N_c8 * tau_N * (P_c2 / (P_c2 + P_u2)) * ((1 - gamma) / 14)
-	
+	N_c8 * tau_N * (P_c1 / (P_c1 + P_u1)) * ((1 - gamma) / 14)
+
 R237:
 	N_c8 > N_u8
-	N_c8 * tau_N * (P_c3 / (P_c3 + P_u3)) * ((1 - gamma) / 14)
+	N_c8 * tau_N * (P_c2 / (P_c2 + P_u2)) * ((1 - gamma) / 14)
 	
 R238:
 	N_c8 > N_u8
-	N_c8 * tau_N * (P_c4 / (P_c4 + P_u4)) * ((1 - gamma) / 14)
+	N_c8 * tau_N * (P_c3 / (P_c3 + P_u3)) * ((1 - gamma) / 14)
 	
 R239:
 	N_c8 > N_u8
-	N_c8 * tau_N * (P_c5 / (P_c5 + P_u5)) * ((1 - gamma) / 14)
+	N_c8 * tau_N * (P_c4 / (P_c4 + P_u4)) * ((1 - gamma) / 14)
 	
 R240:
 	N_c8 > N_u8
-	N_c8 * tau_N * (P_c1 / (P_c1 + P_u1)) * ((1 - gamma) / 14)
-
+	N_c8 * tau_N * (P_c5 / (P_c5 + P_u5)) * ((1 - gamma) / 14)
+	
 R241:
 	N_c8 > N_u8
 	N_c8 * tau_N * (P_c6 / (P_c6 + P_u6)) * ((1 - gamma) / 14)
@@ -1072,11 +1071,11 @@ R256:
 	
 R257: 
 	N_u9 > N_c9
-	rho_N * sigma * N_u9 * (P_c8 / (P_c8 + P_u8)) * ((1 - gamma) / 14)
+	rho_N * sigma * N_u9 * (P_c7 / (P_c7 + P_u7)) * ((1 - gamma) / 14)
 	
 R258: 
 	N_u9 > N_c9
-	rho_N * sigma * N_u9 * (P_c7 / (P_c7 + P_u7)) * ((1 - gamma) / 14)
+	rho_N * sigma * N_u9 * (P_c8 / (P_c8 + P_u8)) * ((1 - gamma) / 14)
 	
 R259: 
 	N_u9 > N_c9
@@ -1112,23 +1111,23 @@ R266:
 
 R267:
 	N_c9 > N_u9
-	N_c9 * tau_N * (P_c2 / (P_c2 + P_u2)) * ((1 - gamma) / 14)
-	
+	N_c9 * tau_N * (P_c1 / (P_c1 + P_u1)) * ((1 - gamma) / 14)
+
 R268:
 	N_c9 > N_u9
-	N_c9 * tau_N * (P_c3 / (P_c3 + P_u3)) * ((1 - gamma) / 14)
+	N_c9 * tau_N * (P_c2 / (P_c2 + P_u2)) * ((1 - gamma) / 14)
 	
 R269:
 	N_c9 > N_u9
-	N_c9 * tau_N * (P_c4 / (P_c4 + P_u4)) * ((1 - gamma) / 14)
+	N_c9 * tau_N * (P_c3 / (P_c3 + P_u3)) * ((1 - gamma) / 14)
 	
 R270:
 	N_c9 > N_u9
-	N_c9 * tau_N * (P_c5 / (P_c5 + P_u5)) * ((1 - gamma) / 14)
+	N_c9 * tau_N * (P_c4 / (P_c4 + P_u4)) * ((1 - gamma) / 14)
 	
 R271:
 	N_c9 > N_u9
-	N_c9 * tau_N * (P_c1 / (P_c1 + P_u1)) * ((1 - gamma) / 14)
+	N_c9 * tau_N * (P_c5 / (P_c5 + P_u5)) * ((1 - gamma) / 14)
 
 R272:
 	N_c9 > N_u9
@@ -1136,11 +1135,11 @@ R272:
 	
 R273:
 	N_c9 > N_u9
-	N_c9 * tau_N * (P_c8 / (P_c8 + P_u8)) * ((1 - gamma) / 14)
+	N_c9 * tau_N * (P_c7 / (P_c7 + P_u7)) * ((1 - gamma) / 14)
 	
 R274:
 	N_c9 > N_u9
-	N_c9 * tau_N * (P_c7 / (P_c7 + P_u7)) * ((1 - gamma) / 14)
+	N_c9 * tau_N * (P_c8 / (P_c8 + P_u8)) * ((1 - gamma) / 14)
 	
 R275:
 	N_c9 > N_u9
@@ -1196,18 +1195,18 @@ R286:
 R287: 
 	N_u10 > N_c10
 	rho_N * sigma * N_u10 * (P_c6 / (P_c6 + P_u6)) * ((1 - gamma) / 14)
-	
+
 R288: 
 	N_u10 > N_c10
-	rho_N * sigma * N_u10 * (P_c8 / (P_c8 + P_u8)) * ((1 - gamma) / 14)
+	rho_N * sigma * N_u10 * (P_c7 / (P_c7 + P_u7)) * ((1 - gamma) / 14)
 	
 R289: 
 	N_u10 > N_c10
-	rho_N * sigma * N_u10 * (P_c9 / (P_c9 + P_u9)) * ((1 - gamma) / 14)
+	rho_N * sigma * N_u10 * (P_c8 / (P_c8 + P_u8)) * ((1 - gamma) / 14)
 	
-R290: 
+R291: 
 	N_u10 > N_c10
-	rho_N * sigma * N_u10 * (P_c7 / (P_c7 + P_u7)) * ((1 - gamma) / 14)
+	rho_N * sigma * N_u10 * (P_c9 / (P_c9 + P_u9)) * ((1 - gamma) / 14)
 	
 R291: 
 	N_u10 > N_c10
@@ -1239,39 +1238,39 @@ R297:
 
 R298:
 	N_c10 > N_u10
-	N_c10 * tau_N * (P_c2 / (P_c2 + P_u2)) * ((1 - gamma) / 14)
-	
+	N_c10 * tau_N * (P_c1 / (P_c1 + P_u1)) * ((1 - gamma) / 14)
+
 R299:
 	N_c10 > N_u10
-	N_c10 * tau_N * (P_c3 / (P_c3 + P_u3)) * ((1 - gamma) / 14)
+	N_c10 * tau_N * (P_c2 / (P_c2 + P_u2)) * ((1 - gamma) / 14)
 	
 R300:
 	N_c10 > N_u10
-	N_c10 * tau_N * (P_c4 / (P_c4 + P_u4)) * ((1 - gamma) / 14)
+	N_c10 * tau_N * (P_c3 / (P_c3 + P_u3)) * ((1 - gamma) / 14)
 	
 R301:
 	N_c10 > N_u10
-	N_c10 * tau_N * (P_c5 / (P_c5 + P_u5)) * ((1 - gamma) / 14)
+	N_c10 * tau_N * (P_c4 / (P_c4 + P_u4)) * ((1 - gamma) / 14)
 	
 R302:
 	N_c10 > N_u10
-	N_c10 * tau_N * (P_c1 / (P_c1 + P_u1)) * ((1 - gamma) / 14)
+	N_c10 * tau_N * (P_c5 / (P_c5 + P_u5)) * ((1 - gamma) / 14)
 
 R303:
 	N_c10 > N_u10
 	N_c10 * tau_N * (P_c6 / (P_c6 + P_u6)) * ((1 - gamma) / 14)
-	
+
 R304:
 	N_c10 > N_u10
-	N_c10 * tau_N * (P_c8 / (P_c8 + P_u8)) * ((1 - gamma) / 14)
+	N_c10 * tau_N * (P_c7 / (P_c7 + P_u7)) * ((1 - gamma) / 14)
 	
 R305:
 	N_c10 > N_u10
-	N_c10 * tau_N * (P_c9 / (P_c9 + P_u9)) * ((1 - gamma) / 14)
+	N_c10 * tau_N * (P_c8 / (P_c8 + P_u8)) * ((1 - gamma) / 14)
 	
 R306:
 	N_c10 > N_u10
-	N_c10 * tau_N * (P_c7 / (P_c7 + P_u7)) * ((1 - gamma) / 14)
+	N_c10 * tau_N * (P_c9 / (P_c9 + P_u9)) * ((1 - gamma) / 14)
 	
 R307:
 	N_c10 > N_u10
@@ -1366,39 +1365,39 @@ R328:
 
 R329:
 	N_c11 > N_u11
-	N_c11 * tau_N * (P_c2 / (P_c2 + P_u2)) * ((1 - gamma) / 14)
-	
+	N_c11 * tau_N * (P_c1 / (P_c1 + P_u1)) * ((1 - gamma) / 14)
+
 R330:
 	N_c11 > N_u11
-	N_c11 * tau_N * (P_c3 / (P_c3 + P_u3)) * ((1 - gamma) / 14)
+	N_c11 * tau_N * (P_c2 / (P_c2 + P_u2)) * ((1 - gamma) / 14)
 	
 R331:
 	N_c11 > N_u11
-	N_c11 * tau_N * (P_c4 / (P_c4 + P_u4)) * ((1 - gamma) / 14)
+	N_c11 * tau_N * (P_c3 / (P_c3 + P_u3)) * ((1 - gamma) / 14)
 	
 R332:
 	N_c11 > N_u11
-	N_c11 * tau_N * (P_c5 / (P_c5 + P_u5)) * ((1 - gamma) / 14)
+	N_c11 * tau_N * (P_c4 / (P_c4 + P_u4)) * ((1 - gamma) / 14)
 	
 R333:
 	N_c11 > N_u11
-	N_c11 * tau_N * (P_c1 / (P_c1 + P_u1)) * ((1 - gamma) / 14)
-
+	N_c11 * tau_N * (P_c5 / (P_c5 + P_u5)) * ((1 - gamma) / 14)
+	
 R334:
 	N_c11 > N_u11
 	N_c11 * tau_N * (P_c6 / (P_c6 + P_u6)) * ((1 - gamma) / 14)
-	
+
 R335:
 	N_c11 > N_u11
-	N_c11 * tau_N * (P_c8 / (P_c8 + P_u8)) * ((1 - gamma) / 14)
+	N_c11 * tau_N * (P_c7 / (P_c7 + P_u7)) * ((1 - gamma) / 14)
 	
 R336:
 	N_c11 > N_u11
-	N_c11 * tau_N * (P_c9 / (P_c9 + P_u9)) * ((1 - gamma) / 14)
+	N_c11 * tau_N * (P_c8 / (P_c8 + P_u8)) * ((1 - gamma) / 14)
 	
 R337:
 	N_c11 > N_u11
-	N_c11 * tau_N * (P_c7 / (P_c7 + P_u7)) * ((1 - gamma) / 14)
+	N_c11 * tau_N * (P_c9 / (P_c9 + P_u9)) * ((1 - gamma) / 14)
 	
 R338:
 	N_c11 > N_u11
@@ -1493,39 +1492,39 @@ R359:
 
 R360:
 	N_c12 > N_u12
-	N_c12 * tau_N * (P_c2 / (P_c2 + P_u2)) * ((1 - gamma) / 14)
-	
+	N_c12 * tau_N * (P_c1 / (P_c1 + P_u1)) * ((1 - gamma) / 14)
+
 R361:
 	N_c12 > N_u12
-	N_c12 * tau_N * (P_c3 / (P_c3 + P_u3)) * ((1 - gamma) / 14)
+	N_c12 * tau_N * (P_c2 / (P_c2 + P_u2)) * ((1 - gamma) / 14)
 	
 R362:
 	N_c12 > N_u12
-	N_c12 * tau_N * (P_c4 / (P_c4 + P_u4)) * ((1 - gamma) / 14)
+	N_c12 * tau_N * (P_c3 / (P_c3 + P_u3)) * ((1 - gamma) / 14)
 	
 R363:
 	N_c12 > N_u12
-	N_c12 * tau_N * (P_c5 / (P_c5 + P_u5)) * ((1 - gamma) / 14)
+	N_c12 * tau_N * (P_c4 / (P_c4 + P_u4)) * ((1 - gamma) / 14)
 	
 R364:
 	N_c12 > N_u12
-	N_c12 * tau_N * (P_c1 / (P_c1 + P_u1)) * ((1 - gamma) / 14)
+	N_c12 * tau_N * (P_c5 / (P_c5 + P_u5)) * ((1 - gamma) / 14)
 
 R365:
 	N_c12 > N_u12
 	N_c12 * tau_N * (P_c6 / (P_c6 + P_u6)) * ((1 - gamma) / 14)
-	
+
 R366:
 	N_c12 > N_u12
-	N_c12 * tau_N * (P_c8 / (P_c8 + P_u8)) * ((1 - gamma) / 14)
+	N_c12 * tau_N * (P_c7 / (P_c7 + P_u7)) * ((1 - gamma) / 14)
 	
 R367:
 	N_c12 > N_u12
-	N_c12 * tau_N * (P_c9 / (P_c9 + P_u9)) * ((1 - gamma) / 14)
+	N_c12 * tau_N * (P_c8 / (P_c8 + P_u8)) * ((1 - gamma) / 14)
 	
 R368:
 	N_c12 > N_u12
-	N_c12 * tau_N * (P_c7 / (P_c7 + P_u7)) * ((1 - gamma) / 14)
+	N_c12 * tau_N * (P_c9 / (P_c9 + P_u9)) * ((1 - gamma) / 14)
 	
 R369:
 	N_c12 > N_u12
@@ -1620,39 +1619,39 @@ R390:
 
 R391:
 	N_c13 > N_u13
-	N_c13 * tau_N * (P_c2 / (P_c2 + P_u2)) * ((1 - gamma) / 14)
-	
+	N_c13 * tau_N * (P_c1 / (P_c1 + P_u1)) * ((1 - gamma) / 14)
+
 R392:
 	N_c13 > N_u13
-	N_c13 * tau_N * (P_c3 / (P_c3 + P_u3)) * ((1 - gamma) / 14)
+	N_c13 * tau_N * (P_c2 / (P_c2 + P_u2)) * ((1 - gamma) / 14)
 	
 R393:
 	N_c13 > N_u13
-	N_c13 * tau_N * (P_c4 / (P_c4 + P_u4)) * ((1 - gamma) / 14)
+	N_c13 * tau_N * (P_c3 / (P_c3 + P_u3)) * ((1 - gamma) / 14)
 	
 R394:
 	N_c13 > N_u13
-	N_c13 * tau_N * (P_c5 / (P_c5 + P_u5)) * ((1 - gamma) / 14)
+	N_c13 * tau_N * (P_c4 / (P_c4 + P_u4)) * ((1 - gamma) / 14)
 	
 R395:
 	N_c13 > N_u13
-	N_c13 * tau_N * (P_c1 / (P_c1 + P_u1)) * ((1 - gamma) / 14)
-
+	N_c13 * tau_N * (P_c5 / (P_c5 + P_u5)) * ((1 - gamma) / 14)
+	
 R396:
 	N_c13 > N_u13
 	N_c13 * tau_N * (P_c6 / (P_c6 + P_u6)) * ((1 - gamma) / 14)
-	
+
 R397:
 	N_c13 > N_u13
-	N_c13 * tau_N * (P_c8 / (P_c8 + P_u8)) * ((1 - gamma) / 14)
+	N_c13 * tau_N * (P_c7 / (P_c7 + P_u7)) * ((1 - gamma) / 14)
 	
 R398:
 	N_c13 > N_u13
-	N_c13 * tau_N * (P_c9 / (P_c9 + P_u9)) * ((1 - gamma) / 14)
+	N_c13 * tau_N * (P_c8 / (P_c8 + P_u8)) * ((1 - gamma) / 14)
 	
 R399:
 	N_c13 > N_u13
-	N_c13 * tau_N * (P_c7 / (P_c7 + P_u7)) * ((1 - gamma) / 14)
+	N_c13 * tau_N * (P_c9 / (P_c9 + P_u9)) * ((1 - gamma) / 14)
 	
 R400:
 	N_c13 > N_u13
@@ -1747,39 +1746,39 @@ R421:
 
 R422:
 	N_c14 > N_u14
-	N_c14 * tau_N * (P_c2 / (P_c2 + P_u2)) * ((1 - gamma) / 14)
-	
+	N_c14 * tau_N * (P_c1 / (P_c1 + P_u1)) * ((1 - gamma) / 14)
+
 R423:
 	N_c14 > N_u14
-	N_c14 * tau_N * (P_c3 / (P_c3 + P_u3)) * ((1 - gamma) / 14)
+	N_c14 * tau_N * (P_c2 / (P_c2 + P_u2)) * ((1 - gamma) / 14)
 	
 R424:
 	N_c14 > N_u14
-	N_c14 * tau_N * (P_c4 / (P_c4 + P_u4)) * ((1 - gamma) / 14)
+	N_c14 * tau_N * (P_c3 / (P_c3 + P_u3)) * ((1 - gamma) / 14)
 	
 R425:
 	N_c14 > N_u14
-	N_c14 * tau_N * (P_c5 / (P_c5 + P_u5)) * ((1 - gamma) / 14)
+	N_c14 * tau_N * (P_c4 / (P_c4 + P_u4)) * ((1 - gamma) / 14)
 	
 R426:
 	N_c14 > N_u14
-	N_c14 * tau_N * (P_c1 / (P_c1 + P_u1)) * ((1 - gamma) / 14)
+	N_c14 * tau_N * (P_c5 / (P_c5 + P_u5)) * ((1 - gamma) / 14)
 
 R427:
 	N_c14 > N_u14
 	N_c14 * tau_N * (P_c6 / (P_c6 + P_u6)) * ((1 - gamma) / 14)
-	
+
 R428:
 	N_c14 > N_u14
-	N_c14 * tau_N * (P_c8 / (P_c8 + P_u8)) * ((1 - gamma) / 14)
+	N_c14 * tau_N * (P_c7 / (P_c7 + P_u7)) * ((1 - gamma) / 14)
 	
 R429:
 	N_c14 > N_u14
-	N_c14 * tau_N * (P_c9 / (P_c9 + P_u9)) * ((1 - gamma) / 14)
+	N_c14 * tau_N * (P_c8 / (P_c8 + P_u8)) * ((1 - gamma) / 14)
 	
 R430:
 	N_c14 > N_u14
-	N_c14 * tau_N * (P_c7 / (P_c7 + P_u7)) * ((1 - gamma) / 14)
+	N_c14 * tau_N * (P_c9 / (P_c9 + P_u9)) * ((1 - gamma) / 14)
 	
 R431:
 	N_c14 > N_u14
@@ -1874,40 +1873,40 @@ R452:
 
 R453:
 	N_c15 > N_u15
-	N_c15 * tau_N * (P_c2 / (P_c2 + P_u2)) * ((1 - gamma) / 14)
-	
+	N_c15 * tau_N * (P_c1 / (P_c1 + P_u1)) * ((1 - gamma) / 14)
+
 R454:
 	N_c15 > N_u15
-	N_c15 * tau_N * (P_c3 / (P_c3 + P_u3)) * ((1 - gamma) / 14)
+	N_c15 * tau_N * (P_c2 / (P_c2 + P_u2)) * ((1 - gamma) / 14)
 	
 R455:
 	N_c15 > N_u15
-	N_c15 * tau_N * (P_c4 / (P_c4 + P_u4)) * ((1 - gamma) / 14)
+	N_c15 * tau_N * (P_c3 / (P_c3 + P_u3)) * ((1 - gamma) / 14)
 	
 R456:
 	N_c15 > N_u15
-	N_c15 * tau_N * (P_c5 / (P_c5 + P_u5)) * ((1 - gamma) / 14)
+	N_c15 * tau_N * (P_c4 / (P_c4 + P_u4)) * ((1 - gamma) / 14)
 	
 R457:
 	N_c15 > N_u15
-	N_c15 * tau_N * (P_c1 / (P_c1 + P_u1)) * ((1 - gamma) / 14)
+	N_c15 * tau_N * (P_c5 / (P_c5 + P_u5)) * ((1 - gamma) / 14)
 
 R458:
 	N_c15 > N_u15
 	N_c15 * tau_N * (P_c6 / (P_c6 + P_u6)) * ((1 - gamma) / 14)
-	
+
 R459:
-	N_c15 > N_u15
-	N_c15 * tau_N * (P_c8 / (P_c8 + P_u8)) * ((1 - gamma) / 14)
-	
-R460:
-	N_c15 > N_u15
-	N_c15 * tau_N * (P_c9 / (P_c9 + P_u9)) * ((1 - gamma) / 14)
-	
-R461:
 	N_c15 > N_u15
 	N_c15 * tau_N * (P_c7 / (P_c7 + P_u7)) * ((1 - gamma) / 14)
 	
+R460:
+	N_c15 > N_u15
+	N_c15 * tau_N * (P_c8 / (P_c8 + P_u8)) * ((1 - gamma) / 14)
+	
+R462:
+	N_c15 > N_u15
+	N_c15 * tau_N * (P_c9 / (P_c9 + P_u9)) * ((1 - gamma) / 14)
+
 R462:
 	N_c15 > N_u15
 	N_c15 * tau_N * (P_c10 / (P_c10 + P_u10)) * ((1 - gamma) / 14)
@@ -1934,7 +1933,7 @@ R466:
 
 R467:
 	D_u > D_c
-	rho_D * sigma * D_u * (P_c1 + P_c2 + P_c3 + P_c4 + P_c5 + P_c6 + P_c7 + P_c8 + P_c9 + P_c10 + P_c11 + P_c12 + P_c13 + P_c14 + P_c15/ (P_c1 + P_c2 + P_c3 + P_c4 + P_c5 + P_c6 + P_c7 + P_c8 + P_c9 + P_c10 + P_c11 + P_c12 + P_c13 + P_c14 + P_c15 + P_u1 + P_u2 + P_u3 + P_u4 + P_u5 + P_u6 + P_u7 + P_u8 + P_u9 + P_u10 + P_u11 + P_u12 + P_u13 + P_u14 + P_u15))
+	rho_D * sigma * D_u * (P_c1 + P_c2 + P_c3 + P_c4 + P_c5 + P_c6 + P_c7 + P_c8 + P_c9 + P_c10 + P_c11 + P_c12 + P_c13 + P_c14 + P_c15 / (P_c1 + P_c2 + P_c3 + P_c4 + P_c5 + P_c6 + P_c7 + P_c8 + P_c9 + P_c10 + P_c11 + P_c12 + P_c13 + P_c14 + P_c15 + P_u1 + P_u2 + P_u3 + P_u4 + P_u5 + P_u6 + P_u7 + P_u8 + P_u9 + P_u10 + P_u11 + P_u12 + P_u13 + P_u14 + P_u15))
 
 R468:
 	D_c > D_u
@@ -1942,7 +1941,7 @@ R468:
 
 R469:
 	D_c > D_u
-	D_c * tau_D * (P_c1 + P_c2 + P_c3 + P_c4 + P_c5 + P_c6 + P_c7 + P_c8 + P_c9 + P_c10 + P_c11 + P_c12 + P_c13 + P_c14 + P_c15/ (P_c1 + P_c2 + P_c3 + P_c4 + P_c5 + P_c6 + P_c7 + P_c8 + P_c9 + P_c10 + P_c11 + P_c12 + P_c13 + P_c14 + P_c15 + P_u1 + P_u2 + P_u3 + P_u4 + P_u5 + P_u6 + P_u7 + P_u8 + P_u9 + P_u10 + P_u11 + P_u12 + P_u13 + P_u14 + P_u15))
+	D_c * tau_D * (P_c1 + P_c2 + P_c3 + P_c4 + P_c5 + P_c6 + P_c7 + P_c8 + P_c9 + P_c10 + P_c11 + P_c12 + P_c13 + P_c14 + P_c15 / (P_c1 + P_c2 + P_c3 + P_c4 + P_c5 + P_c6 + P_c7 + P_c8 + P_c9 + P_c10 + P_c11 + P_c12 + P_c13 + P_c14 + P_c15 + P_u1 + P_u2 + P_u3 + P_u4 + P_u5 + P_u6 + P_u7 + P_u8 + P_u9 + P_u10 + P_u11 + P_u12 + P_u13 + P_u14 + P_u15))
 
 	
 ########################
@@ -2008,7 +2007,6 @@ R483:
 R484:
 	P_u1 > P_c1 + Acquisition
 	rho_N * psi * P_u1 * (N_c15 / (N_c15 + N_u15)) * ((1 - gamma) / 14)	
-
 
 R485:
 	P_u1 > P_c1 + Acquisition
@@ -2106,11 +2104,11 @@ R506:
 
 R507:
 	P_u3 > P_c3 + Acquisition
-	rho_N * psi * P_u3 * (N_c2 / (N_c2 + N_u2)) * ((1 - gamma) / 14)	
+	rho_N * psi * P_u3 * (N_c1 / (N_c1 + N_u1)) * ((1 - gamma) / 14)	
 
 R508:
 	P_u3 > P_c3 + Acquisition
-	rho_N * psi * P_u3 * (N_c1 / (N_c1 + N_u1)) * ((1 - gamma) / 14)	
+	rho_N * psi * P_u3 * (N_c2 / (N_c2 + N_u2)) * ((1 - gamma) / 14)	
 
 R509:
 	P_u3 > P_c3 + Acquisition
@@ -2539,7 +2537,7 @@ R612:
 	rho_D * psi * P_u8 * (D_c / (D_c + D_u))	
 
 R613:
-	P_u8 > P_c8
+	P_u8 > P_u8
 	theta * P_u8 * (1-nu)
 
 R614:	
@@ -2614,7 +2612,7 @@ R630:
 	rho_D * psi * P_u9 * (D_c / (D_c + D_u))	
 
 R631:
-	P_u9 > P_c9
+	P_u9 > P_u9
 	theta * P_u9 * (1-nu)
 
 R632:	
@@ -2688,12 +2686,12 @@ R648:
 	rho_D * psi * P_u10 * (D_c / (D_c + D_u))	
 
 R649:
-	P_u10 > P_c10
-	theta * P_c10 * (1-nu)
+	P_u10 > P_u10
+	theta * P_u10 * (1-nu)
 
 R650:	
 	P_u10 > P_c10
-	theta * P_c10 * nu
+	theta * P_u10 * nu
 
 # Reactions Involving Uncontaminated Patients (P_u) Cohort 11 #
 
@@ -2762,12 +2760,12 @@ R666:
 	rho_D * psi * P_u11 * (D_c / (D_c + D_u))	
 
 R667:
-	P_u11 > P_c11
-	theta * P_c11 * (1-nu)
+	P_u11 > P_u11
+	theta * P_u11 * (1-nu)
 
 R668:	
 	P_u11 > P_c11
-	theta * P_c11 * nu
+	theta * P_u11 * nu
 
 # Reactions Involving Uncontaminated Patients (P_u) Cohort 12 #
 
@@ -2836,12 +2834,12 @@ R684:
 	rho_D * psi * P_u12 * (D_c / (D_c + D_u))	
 
 R685:
-	P_u12 > P_c12
-	theta * P_c12 * (1-nu)
+	P_u12 > P_u12
+	theta * P_u12 * (1-nu)
 
 R686:	
 	P_u12 > P_c12
-	theta * P_c12 * nu
+	theta * P_u12 * nu
 
 # Reactions Involving Uncontaminated Patients (P_u) Cohort 13 #
 
@@ -2910,12 +2908,12 @@ R702:
 	rho_D * psi * P_u13 * (D_c / (D_c + D_u))	
 
 R703:
-	P_u13 > P_c13
-	theta * P_c13 * (1-nu)
+	P_u13 > P_u13
+	theta * P_u13 * (1-nu)
 
 R704:	
 	P_u13 > P_c13
-	theta * P_c13 * nu
+	theta * P_u13 * nu
 
 # Reactions Involving Uncontaminated Patients (P_u) Cohort 14 #
 
@@ -2984,12 +2982,12 @@ R720:
 	rho_D * psi * P_u14 * (D_c / (D_c + D_u))	
 
 R721:
-	P_u14 > P_c14
-	theta * P_c14 * (1-nu)
+	P_u14 > P_u14
+	theta * P_u14 * (1-nu)
 
 R722:	
 	P_u14 > P_c14
-	theta * P_c14 * nu
+	theta * P_u14 * nu
 
 # Reactions Involving Uncontaminated Patients (P_u) Cohort 15 #
 
@@ -3058,12 +3056,12 @@ R738:
 	rho_D * psi * P_u15 * (D_c / (D_c + D_u))	
 
 R739:
-	P_u15 > P_c15
-	theta * P_c15 * (1-nu)
+	P_u15 > P_u15
+	theta * P_u15 * (1-nu)
 
 R740:	
 	P_u15 > P_c15
-	theta * P_c15 * nu
+	theta * P_u15 * nu
 ########################
 
 # Reactions Involving Contaminated Patients (P_c) Cohort 1 #
@@ -3275,9 +3273,6 @@ R785:
 	P_c15 > P_u15
 	theta * P_c15 * (1-nu)
 
-
-
-
 ########################
 
 ### Parameter Values ###
@@ -3313,7 +3308,7 @@ N_c10 = 0
 N_c11 = 0
 N_c12 = 0
 N_c13 = 0
-N_c14= 0
+N_c14 = 0
 N_c15 = 0
 
 D_u = 1
@@ -3348,7 +3343,7 @@ P_c10 = 0
 P_c11 = 0
 P_c12 = 0
 P_c13 = 0
-P_c14= 0
+P_c14 = 0
 P_c15 = 0
 
 Acquisition = 0
